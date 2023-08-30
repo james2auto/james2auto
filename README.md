@@ -1,3 +1,17 @@
+<html>
+<head>
+    <title>Quote Form</title>
+</head>
+<body>
+    <form action="{{ route('quote.store') }}" method="post">
+        @csrf
+        <input type="text" name="name" placeholder="Name">
+        <input type="tel" name="phone_number" placeholder="Phone Number">
+        <input type="email" name="email" placeholder="Email">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
 <?php
 
 namespace App\Http\Controllers;
